@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+@font-face {
+    font-family: 'trajanusXI';
+    src: url(../fonts/TrajanusBriX-Invers.ttf);
+}
+@font-face {
+    font-family: 'balgruf';
+    src: url(../fonts/Balgruf-JRye7.ttf);
+}
+
+body {
+    background-color: #353531;
+}
+
+h1 {
+    text-align: center;
+    color: #c0c0c0;
+    padding: 40px;
+    margin: 0;
+    font-family: 'balgruf';
+    font-size: 5rem;
+    text-decoration: overline underline;
+    background-image: url(../img/estrellas1.jpg);
+    background-attachment: fixed;
+}
+.text-h2 {
+    text-align: center;
+    margin: 30px 0;
+}
+h2 {
+    display: inline;
+    color: #c0c0c0;
+    font-size: 4.5rem;
+    font-family: 'balgruf';
+    text-decoration: underline;
+    border-left: ridge 3px;
+    border-right: ridge 3px ;
+    padding: 0 20px 0 20px;
+}
+p {
+    font-family: 'EB Garamond', serif;
+}
+
+a {
+    text-decoration: none;
+    color: #D7D3D0;
+}
+
+/* BARRA DE NAVEGACION */
+
+header {
+    background-color: #222222;
+}
+
+.logo {
+    width: 250px;
+    padding: 20px;
+}
+
+nav {
+    text-align: right;
+
+}
+
+nav li {
+    font-family: 'trajanusxi';
+    font-size: 1.1rem;
+    display: inline;
+    letter-spacing: -1px;
+    border-left: ridge 3px #D7D3D0;
+    margin-right: 20px;
+    padding-left: 10px;
+}
+
+/* CONTENIDO INDEX */
+
+.fondoIndex img {
+    display: block;
+}
+
+.resumen {
+    padding: 50px 200px;
+    background-image: url(../img/estrellas2.jpg);
+    background-attachment: fixed;
+}
+
+.resumen p {
+    color: #c0c0c0;
+    background-color: #222222;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+footer {
+    background-color: #222222;
+    padding-top: 100px;
+    position: relative;
+}
+
+.textoFooter {
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    left: 10%;
+}
+
+.go-up {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+}
+
+.text-up {
+    color: aquamarine;
+    font-size: 1.3rem;
+    text-decoration: underline;
+}
+
+/* CONTENIDO MAP */
+
+.fondoSkyrim img {
+    display: block;
+}
+
+/* SANGRE DE DRAGON */
+
+.fondoDova img {
+    display: block;
+}
+
+/* FORMULARIO */
+
+#form {
+    background-color: #000000;
+    padding: 20px;
+}
+
+legend {
+    font-family: 'balgruf';
+    color: #D7D3D0;
+    font-size: 2rem;
+}
+
+#form div {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.5rem;
+    color: #D7D3D0;
+}
+
+/* MEDIA */
+
+
+.screen1, .screen2 {
+    display: block;
+    margin: 0 auto;
+    height: 400px;
+}
+
+
+.vid-skyrim iframe {
+    display: block;
+    margin: 0 auto;
+    height: 500px;
+    width: 700px;
+}
