@@ -20,17 +20,26 @@ body {
     background-color: #353531;
 }
 
+
 h1 {
     text-align: center;
     color: #c0c0c0;
-    padding: 40px;
+    padding: 40px 0;
     margin: 0;
     font-family: 'balgruf';
-    font-size: 5rem;
-    text-decoration: overline underline;
+    font-size: 4rem;
+    text-decoration: underline;
     background-image: url(../img/estrellas1.jpg);
     background-attachment: fixed;
 }
+
+@media (min-width: 992px) {
+    h1 {
+        font-size: 5em;
+    }
+}
+
+
 .text-h2 {
     text-align: center;
     margin: 30px 0;
@@ -81,12 +90,13 @@ header {
 
 /* CONTENIDO INDEX */
 
-.fondoIndex img {
-    display: block;
+.fondoIndex {
+    text-align: center;
 }
 
+
 .resumen {
-    padding: 50px 200px;
+    padding: 20px 30px;
     background-image: url(../img/estrellas2.jpg);
     background-attachment: fixed;
 }
@@ -94,35 +104,47 @@ header {
 .resumen p {
     color: #c0c0c0;
     background-color: #222222;
-    font-size: 2.5rem;
+    font-size: 1rem;
     text-align: center;
 }
 
-footer {
-    background-color: #222222;
-    padding-top: 100px;
-    position: relative;
+@media (min-width: 425px) {
+    .resumen {
+        padding: 30px 40px;
+    }
+    .resumen p {
+        font-size: 1.3em;
+
+    }
 }
 
-.textoFooter {
-    color: white;
-    position: absolute;
-    bottom: 10px;
-    left: 10%;
+@media (min-width: 768px) {
+    .resumen {
+        padding: 30px 50px;
+    }
+    .resumen p {
+        font-size: 1.6em;
+
+    }
 }
 
-.go-up {
-    position: absolute;
-    right: 10px;
-    top: 50%;
+
+@media (min-width: 1024px) {
+    .resumen {
+        padding: 30px 60px;
+    }
+    .resumen p {
+        font-size: 2em;
+    }
 }
 
-.text-up {
-    color: aquamarine;
-    font-size: 1.3rem;
-    text-decoration: underline;
+.facciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
-
 /* CONTENIDO MAP */
 
 .fondoSkyrim img {
@@ -169,4 +191,32 @@ legend {
     margin: 0 auto;
     height: 500px;
     width: 700px;
+}
+
+/* FOOTER */
+
+
+footer {
+    background-color: #222222;
+    padding-top: 100px;
+    position: relative;
+}
+
+.textoFooter {
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    left: 10%;
+}
+
+.go-up {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+}
+
+.text-up {
+    color: aquamarine;
+    font-size: 1.3rem;
+    text-decoration: underline;
 }
