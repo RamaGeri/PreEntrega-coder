@@ -47,7 +47,7 @@ h1 {
 h2 {
     display: inline;
     color: #c0c0c0;
-    font-size: 4.5rem;
+    font-size: 2rem;
     font-family: 'balgruf';
     text-decoration: underline;
     border-left: ridge 3px;
@@ -98,7 +98,6 @@ header {
 .resumen {
     padding: 20px 30px;
     background-image: url(../img/estrellas2.jpg);
-    background-attachment: fixed;
 }
 
 .resumen p {
@@ -203,18 +202,54 @@ header {
 /* MEDIA */
 
 
-.screen1, .screen2 {
-    display: block;
-    margin: 0 auto;
-    height: 400px;
+.carousel {
+    width: 50vh;
 }
 
 
 .vid-skyrim iframe {
     display: block;
     margin: 0 auto;
-    height: 500px;
-    width: 700px;
+    width: 50vh;
+    height: 40vh;
+}
+
+@media (min-width: 700px) {
+    h2 {
+        font-size: 3.5rem;
+    }
+    .carousel {
+        width: 80vh;
+    }
+    .vid-skyrim iframe {
+        width: 80vh;
+        height: 60vh;
+    }
+}
+
+@media (min-width: 1024px) {
+    h2 {
+        font-size: 4.2rem;
+    }
+    .carousel {
+        width: 100vh;
+    }
+    .vid-skyrim iframe {
+        width: 100vh;
+        height: 80vh;
+    }
+}
+
+@media (min-width: 1440px) {
+    h2 {
+        font-size: 4rem;
+    }
+    .carousel {
+        width: 130vh;
+    }
+    .vid-skyrim iframe {
+        width: 130vh;
+    }
 }
 
 /* FORMULARIO */
