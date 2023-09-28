@@ -192,6 +192,13 @@ header {
     display: block;
 }
 
+.div-galeria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #galeria {
     display: flex;
     flex-direction: column;
