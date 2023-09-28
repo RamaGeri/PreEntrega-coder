@@ -1,0 +1,15 @@
+/* VARIABLES GENERALES */
+$bg-body: #353531;
+$color-text: #c0c0c0;
+$fuente-principal: 'balgruf';
+$fuente-secundaria: 'trajanusXI';
+$fuente-parrafo: 'EB Garamond', serif;
+@font-face {
+    font-family: 'trajanusXI';
+    src: url(../fonts/TrajanusBriX-Invers.ttf);
+}
+@font-face {
+    font-family: 'balgruf';
+    src: url(../fonts/Balgruf-JRye7.ttf);
+}
+$size-h1: 4rem;
