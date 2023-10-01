@@ -1,0 +1,41 @@
+/* MEDIA */
+#carrusel {
+    background-color: #222222;
+}
+.vid-skyrim {
+    background-color: #222222;
+    iframe {
+    display: block;
+    margin: 0 auto;
+    width: 100vw;
+    height: 40vh;
+    }
+}
+@media (min-width: 700px) {
+    h2 {
+        font-size: $size-h1 - .5rem;
+    }
+    .carousel {
+        width: 90vw;
+    }
+    .vid-skyrim iframe {
+        width: 90vw;
+        height: 60vh;
+    }
+}
+@media (min-width: 1024px) {
+    h2 {
+        font-size: $size-h1;
+    }
+    .vid-skyrim iframe {
+        height: 80vh;
+    }
+}
+@media (min-width: 1440px) {
+    .carousel {
+        width: 75vw;
+    }
+    .vid-skyrim iframe {
+        width: 75vw;
+    }
+}

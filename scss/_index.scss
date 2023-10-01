@@ -1,0 +1,83 @@
+/* CONTENIDO INDEX */
+.fondoIndex {
+    text-align: center;
+}
+.resumen {
+    padding: 20px 30px;
+    background-image: url(../img/estrellas2.jpg);
+    p {
+    color: $color-text;
+    background-color: #222222;
+    font-size: 1rem;
+    text-align: center;
+    }
+}
+@media (min-width: 425px) {
+    .resumen {
+        padding: 30px 40px;
+    }
+    .resumen p {
+        font-size: 1.3em;
+    }
+}
+@media (min-width: 768px) {
+    .resumen {
+        padding: 30px 50px;
+    }
+    .resumen p {
+        font-size: 1.6em;
+    }
+}
+@media (min-width: 1024px) {
+    .resumen {
+        padding: 30px 60px;
+    }
+    .resumen p {
+        font-size: 2em;
+    }
+}
+.facciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+@media (min-width: 1024px) {
+    .facciones {
+        flex-direction: row;
+        margin-top: 30px;
+    }
+}
+.card-body {
+    background-color: $color-text;
+}
+.text-h3 {
+    margin: 30px;
+    border-top: solid 3px #222222;
+    border-bottom: solid 3px #222222;
+    h3 {
+        font-family: $fuente-principal;
+        font-size: $size-h1 - 1rem;
+        color: $color-text;
+    }
+}
+@media (min-width: 1440px) {
+    .text-h3 {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+@media (min-width: 1200px) {
+    .text-h3 h3 {
+        font-size: $size-h1 + .5rem;
+    }
+}
+@media (min-width: 768px) {
+    .text-h3 h3 {
+        font-size: $size-h1;
+    }
+}
