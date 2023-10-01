@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/skyrim-fav.jpg" type="image/x-icon">
     <meta name="description" content="Bienvenido al inicio de esta pagina dedicada a los fans de Skyrim.">
     <meta name="keywords" content="fan-page, Skyrim, index, aventura, ARPG, mundo abierto, TES:V, facciones">
@@ -60,12 +61,12 @@
 
         <section>
             <div class="facciones container curva">
-                <div class="text-h3">
+                <div class="text-h3" data-aos="fade-right">
                     <h3>Algunas de las Facciones</h3>
                 </div>
                 <div class="row row-cols-1 row-cols-md-2 g-4">
                     <div class="col">
-                        <div class="card">
+                        <div class="card" data-aos="fade-right">
                             <img src="img/barbas-grises.jpg" class="card-img-top" alt="Barbas grises">
                             <div class="card-body">
                                 <h5 class="card-title">Barbas grises</h5>
@@ -74,7 +75,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card">
+                        <div class="card" data-aos="fade-left">
                             <img src="img/capa-tormenta.jpg" class="card-img-top" alt="Capas de la tormenta">
                             <div class="card-body">
                                 <h5 class="card-title">Capas de la tormenta</h5>
@@ -83,7 +84,7 @@
                     </div>
                     </div>
                     <div class="col">
-                        <div class="card">
+                        <div class="card" data-aos="fade-right">
                             <img src="img/colegio-hibernalia.jpeg" class="card-img-top" alt="Colegio de hibernalia">
                             <div class="card-body">
                                 <h5 class="card-title">Colegio de hibernalia</h5>
@@ -92,7 +93,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card">
+                        <div class="card" data-aos="fade-left">
                             <img src="img/hermandad-oscura.jpg" class="card-img-top" alt="Hermanadad oscura">
                             <div class="card-body">
                                 <h5 class="card-title">Hermanadad oscura</h5>
@@ -120,5 +121,10 @@
 
     <!-- SCRIPT BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- SCRIPT AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

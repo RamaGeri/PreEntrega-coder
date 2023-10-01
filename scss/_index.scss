@@ -41,11 +41,20 @@
     text-align: center;
     gap: 30px;
     margin-bottom: 30px;
+
 }
 @media (min-width: 1024px) {
     .facciones {
         flex-direction: row;
         margin-top: 30px;
+    }
+}
+.col {
+    transition: all .5s;
+
+    &:hover {
+        transform: scale(1.2);
+        z-index: 1;
     }
 }
 .card-body {
@@ -55,10 +64,25 @@
     margin: 30px;
     border-top: solid 3px $bg-body;
     border-bottom: solid 3px $bg-body;
+
+    transition: all 2s;
+
+    &:hover {
+        border-top: none;
+        border-bottom: none;
+    }
     h3 {
+        margin-bottom: 0;
         font-family: $fuente-principal;
         font-size: $size-h1 - 1rem;
         color: $color-text;
+
+        transition: all .5s;
+        &:hover {
+            color: $bg-body;
+            background-color: $color-text;
+            text-decoration: underline;
+        }
     }
 }
 @media (min-width: 1440px) {
