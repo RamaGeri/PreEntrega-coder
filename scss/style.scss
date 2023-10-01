@@ -4,7 +4,7 @@
 }
 @import "variables";
 body {
-    background-color: $bg-body;
+    background-color: #353531;
 }
 img {
     max-width: 100%;
@@ -49,21 +49,17 @@ a {
 @import "nav";
 /* FOOTER */
 footer {
-    background-color: #222222;
+    background-color: $bg-body;
     padding-top: 60px;
 }
 .textoFooter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-column-center;
     p {
         color: $color-text;
     }
 }
 .go-up {
-    display: flex;
-    flex-direction: column;
+    @include flex-column-center;
     align-items: end;
     a {
     color: tomato;

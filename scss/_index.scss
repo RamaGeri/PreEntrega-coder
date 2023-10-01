@@ -7,7 +7,7 @@
     background-image: url(../img/estrellas2.jpg);
     p {
     color: $color-text;
-    background-color: #222222;
+    background-color: $bg-body;
     font-size: 1rem;
     text-align: center;
     }
@@ -37,11 +37,7 @@
     }
 }
 .facciones {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    @include flex-column-center;
     text-align: center;
     gap: 30px;
     margin-bottom: 30px;
@@ -57,8 +53,8 @@
 }
 .text-h3 {
     margin: 30px;
-    border-top: solid 3px #222222;
-    border-bottom: solid 3px #222222;
+    border-top: solid 3px $bg-body;
+    border-bottom: solid 3px $bg-body;
     h3 {
         font-family: $fuente-principal;
         font-size: $size-h1 - 1rem;

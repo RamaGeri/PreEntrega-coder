@@ -1,0 +1,11 @@
+/* CONTENIDO DOVAHKIIN */
+.fondoDova {
+    @extend .fondoSkyrim;
+    background-color: black;
+}
+
+@media (max-width: 767px) {
+    .fondoDova img {
+        height: 50vh;
+    }
+}

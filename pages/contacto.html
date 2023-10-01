@@ -44,8 +44,7 @@
 
     <main>
         <form id="form">
-            <fieldset>
-                <legend>Contanos tu experiencia</legend>
+                <h4>Contanos tu experiencia</h4>
 
                 <div>
                     <label for="nombre">Nombre y apellido</label>
@@ -56,23 +55,24 @@
                     <input type="email" id="mail">
                 </div>
                 <div>
-                    <p>Genero</p>
-                    <label for="masculino">Masculino</label>
-                    <input type="radio" name="genero" id="masculino">
-                    <label for="femenino">Femenino</label>
-                    <input type="radio" name="genero" id="femenino">
-                    <label for="no-bin">No binario</label>
-                    <input type="radio" name="genero" id="no-bin">
+                    <label for="genero">Genero</label>
+                    <select id="genero">
+                        <option disabled>-Seleccione su genero-</option>
+                        <option>Sin especificar</option>
+                        <option>Masculino</option>
+                        <option>Femenino</option>
+                        <option>No binario</option>
+                    </select>
+                    
                 </div>
                 <div>
                     <label for="comentario">Deja tu comentario</label>
-                    <textarea id="comentario" cols="40" rows="15"></textarea>
+                    <textarea id="comentario" cols="30" rows="10"></textarea>
                 </div>
                 <div>
                     <input type="submit" value="Enviar">
                     <input type="reset" value="Limpiar formulario">
                 </div>
-            </fieldset>
         </form>
     </main>
 

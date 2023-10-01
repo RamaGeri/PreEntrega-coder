@@ -1,5 +1,5 @@
 /* VARIABLES GENERALES */
-$bg-body: #353531;
+$bg-body: #222222;
 $color-text: #c0c0c0;
 $fuente-principal: 'balgruf';
 $fuente-secundaria: 'trajanusXI';
@@ -13,3 +13,10 @@ $fuente-parrafo: 'EB Garamond', serif;
     src: url(../fonts/Balgruf-JRye7.ttf);
 }
 $size-h1: 4rem;
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
