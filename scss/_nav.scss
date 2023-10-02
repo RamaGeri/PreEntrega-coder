@@ -1,6 +1,6 @@
 /* BARRA DE NAVEGACION */
 header {
-    background-color: $bg-body;
+    background-color: $color-primario;
 }
 .logo {
     width: 250px;
@@ -9,7 +9,7 @@ header {
 .nav-link {
     font-family: $fuente-secundaria;
     color: $color-text;
-    border-left: ridge 3px #D7D3D0;
+    border-left: ridge 3px $color-text;
     padding-left: 10px;
     margin-right: 20px;
     letter-spacing: -1px;

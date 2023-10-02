@@ -1,9 +1,11 @@
 /* MEDIA */
 #carrusel {
-    background-color: $bg-body;
+background-image: url(../img/gradiente.svg);
+background-size: cover;
 }
 .vid-skyrim {
-    background-color: $bg-body;
+    background-image: url(../img/gradiente.svg);
+    background-size: cover;
     iframe {
     display: block;
     margin: 0 auto;

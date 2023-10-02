@@ -2,17 +2,23 @@
 #form {
     @include flex-column-center;
     align-items: flex-start;
-    background-color: black;
+    background-image: url(../img/layer.svg);
     gap: 10px;
     padding: 20px;
 }
+@media (min-width: 900px) {
+    #form {
+        background-size: cover;
+    }
+}
 h4 {
     font-family: $fuente-principal;
-    color: #D7D3D0;
+    color: $color-text;
+    text-decoration: underline;
     font-size: calc($size-h1 / 2);
 }
 #form div {
     font-family: $fuente-parrafo;
     font-size: 1.5rem;
-    color: #D7D3D0;
+    color: $color-text;
 }

@@ -7,7 +7,7 @@
     background-image: url(../img/estrellas2.jpg);
     p {
     color: $color-text;
-    background-color: $bg-body;
+    background-color: $color-primario;
     font-size: 1rem;
     text-align: center;
     }
@@ -36,24 +36,36 @@
         font-size: 2em;
     }
 }
-.facciones {
+#facciones {
+    background-image: url(../img/poligonos2.svg);
+    background-size: cover;
+    padding-bottom: 30px;
+}
+.container {
     @include flex-column-center;
     text-align: center;
     gap: 30px;
-    margin-bottom: 30px;
-
 }
 @media (min-width: 1024px) {
-    .facciones {
+    #facciones{
+        padding-top: 30px;
+    }
+    .container {
         flex-direction: row;
-        margin-top: 30px;
     }
 }
 .col {
-    transition: all .5s;
+    transition: .5s linear;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+.card {
+    transition: .5s linear;
 
     &:hover {
-        transform: scale(1.2);
+        box-shadow: 14px 14px 18px 8px rgba(0,0,0,0.47);
+        transform: scale(1);
         z-index: 1;
     }
 }
@@ -62,25 +74,19 @@
 }
 .text-h3 {
     margin: 30px;
-    border-top: solid 3px $bg-body;
-    border-bottom: solid 3px $bg-body;
+    border-top: solid 3px $color-terciario;
+    border-bottom: solid 3px $color-terciario;
 
-    transition: all 2s;
-
-    &:hover {
-        border-top: none;
-        border-bottom: none;
-    }
     h3 {
         margin-bottom: 0;
         font-family: $fuente-principal;
         font-size: $size-h1 - 1rem;
         color: $color-text;
 
-        transition: all .5s;
+        transition: all .3s;
         &:hover {
-            color: $bg-body;
-            background-color: $color-text;
+            color: #222222;
+            background-color: $color-terciario;
             text-decoration: underline;
         }
     }

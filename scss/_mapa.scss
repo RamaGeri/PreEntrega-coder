@@ -1,7 +1,6 @@
 /* CONTENIDO MAPA*/
 .fondoSkyrim {
     @include flex-column-center;
-    background-color: $bg-body;
     img {
         width: 100vw;
         height: 50vh;
@@ -20,6 +19,8 @@
 }
 .div-galeria {
     @include flex-column-center;
+    background-image: url(../img/poligonos2.svg);
+    background-size: cover;
 }
 #galeria {
     @include flex-column-center;
