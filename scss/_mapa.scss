@@ -1,6 +1,8 @@
 /* CONTENIDO MAPA*/
 .fondoSkyrim {
     @include flex-column-center;
+    background-image: url(../img/poligonos.svg);
+    background-size: cover;
     img {
         width: 100vw;
         height: 50vh;
@@ -29,11 +31,12 @@
     margin-bottom: 30px;
 }
 .foto1, .foto2, .foto3, .foto4 {
-    width: 100vw;
+    width: 95vw;
     height: 250px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    border: solid 1.5px $color-terciario;
 }
 .foto1 {
     background-image: url(../img/paisaje1.jpg);

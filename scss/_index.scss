@@ -40,6 +40,8 @@
     background-image: url(../img/poligonos2.svg);
     background-size: cover;
     padding-bottom: 30px;
+    /* aplicado overflow porque generacion de scroll lateral */
+    overflow: hidden
 }
 .container {
     @include flex-column-center;
@@ -62,10 +64,9 @@
 }
 .card {
     transition: .5s linear;
-
+    border: solid 1.5px $color-terciario;
     &:hover {
         box-shadow: 14px 14px 18px 8px rgba(0,0,0,0.47);
-        transform: scale(1);
         z-index: 1;
     }
 }

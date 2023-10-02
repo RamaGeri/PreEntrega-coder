@@ -162,6 +162,8 @@ footer {
   background-image: url(../img/poligonos2.svg);
   background-size: cover;
   padding-bottom: 30px;
+  /* aplicado overflow porque generacion de scroll lateral */
+  overflow: hidden;
 }
 
 .container {
@@ -191,10 +193,10 @@ footer {
 
 .card {
   transition: 0.5s linear;
+  border: solid 1.5px #71486d;
 }
 .card:hover {
   box-shadow: 14px 14px 18px 8px rgba(0, 0, 0, 0.47);
-  transform: scale(1);
   z-index: 1;
 }
 
@@ -243,6 +245,8 @@ footer {
   align-content: center;
   justify-content: center;
   align-items: center;
+  background-image: url(../img/poligonos.svg);
+  background-size: cover;
 }
 .fondoSkyrim img, .fondoDova img {
   width: 100vw;
@@ -282,11 +286,12 @@ footer {
 }
 
 .foto1, .foto2, .foto3, .foto4 {
-  width: 100vw;
+  width: 95vw;
   height: 250px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  border: solid 1.5px #71486d;
 }
 
 .foto1 {
@@ -376,43 +381,97 @@ footer {
   background-size: cover;
 }
 
-.vid-skyrim {
-  background-image: url(../img/gradiente.svg);
-  background-size: cover;
-}
-.vid-skyrim iframe {
-  display: block;
-  margin: 0 auto;
-  width: 100vw;
-  height: 40vh;
+.carousel {
+  width: 95vw;
 }
 
-@media (min-width: 700px) {
+.videos-skyrim {
+  background-image: url(../img/gradiente.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 30px 0;
+}
+.videos-skyrim .trailer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.videos-skyrim .trailer iframe {
+  width: 95vw;
+  height: 40vh;
+  box-shadow: 14px 14px 18px 8px rgba(0, 0, 0, 0.47);
+}
+.videos-skyrim .gameplay {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.videos-skyrim .gameplay iframe {
+  width: 95vw;
+  height: 40vh;
+  box-shadow: 14px 14px 18px 8px rgba(0, 0, 0, 0.47);
+}
+
+@media (min-width: 630px) {
   h2 {
     font-size: 3.5rem;
   }
   .carousel {
     width: 90vw;
   }
-  .vid-skyrim iframe {
+  .videos-skyrim .trailer iframe {
     width: 90vw;
-    height: 60vh;
+    height: 50vh;
+  }
+  .videos-skyrim .gameplay iframe {
+    width: 90vw;
+    height: 50vh;
   }
 }
 @media (min-width: 1024px) {
   h2 {
     font-size: 4rem;
   }
-  .vid-skyrim iframe {
-    height: 80vh;
+  .videos-skyrim {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .videos-skyrim .trailer iframe {
+    width: 55vw;
+    height: 40vh;
+  }
+  .videos-skyrim .gameplay iframe {
+    width: 40vw;
+    height: 35vh;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .carousel {
     width: 75vw;
   }
-  .vid-skyrim iframe {
-    width: 75vw;
+  .videos-skyrim {
+    gap: 70px;
+  }
+  .videos-skyrim .trailer iframe {
+    width: 50vw;
+    height: 60vh;
+  }
+  .videos-skyrim .gameplay iframe {
+    width: 40vw;
+    height: 45vh;
   }
 }
 /* FORMULARIO */
