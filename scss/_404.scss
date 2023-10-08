@@ -1,0 +1,32 @@
+#body-404 {
+    background-image: url(../img/estrellas1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.error {
+    @include flex-column-center;
+    height: 100vh;
+    h1 {
+        background-color: $color-primario;
+        padding: 20px;
+        background-image: none;
+        font-size: 5rem;
+        margin-bottom: 40px;
+    }
+    p {
+        font-size: 2rem;
+        background-color: $color-text;
+    }
+    a {
+        background-color: $color-primario;
+        margin-top: 40px;
+        padding: 8px 15px;
+        font-size: 1.5rem;
+        transition: all 0.3s;
+        &:hover {
+            background-color: $color-text;
+            color: $color-primario;
+        }
+    }
+}

@@ -1,75 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
-}
 @import "variables";
-body {
-    background-color: $color-secundario;
-}
-img {
-    max-width: 100%;
-}
-h1 {
-    text-align: center;
-    color: $color-text;
-    padding: 40px 0;
-    margin: 0;
-    font-family: $fuente-principal;
-    font-size: $size-h1;
-    text-decoration: underline;
-    background-image: url(../img/estrellas1.jpg);
-    background-attachment: fixed;
-}
-@media (min-width: 992px) {
-    h1 {
-        font-size: $size-h1 + 1rem;
-    }
-}
-.text-h2 {
-    text-align: center;
-    padding: 30px 0;
-    background-image: url(../img/poligonos2.svg);
-}
-h2 {
-    display: inline;
-    color: $color-text;
-    font-size: $size-h1 - 2rem;
-    font-family: $fuente-principal;
-    text-decoration: underline;
-    border-left: ridge 3px;
-    border-right: ridge 3px ;
-    padding: 0 20px 0 20px;
-}
-p {
-    font-family: $fuente-parrafo;
-}
-a {
-    text-decoration: none;
-    color: $color-text;
-}
+@import "estilos-generales";
 @import "nav";
-/* FOOTER */
-footer {
-    background-color: $color-primario;
-    padding-top: 60px;
-}
-.textoFooter {
-    @include flex-column-center;
-    p {
-        color: $color-text;
-    }
-}
-.go-up {
-    @include flex-column-center;
-    align-items: end;
-    a {
-    color: tomato;
-    font-size: 1.3rem;
-    text-decoration: underline;
-    }
-}
 @import "index";
 @import "mapa";
 @import "dovahkiin";
 @import "media";
 @import "contacto";
+@import "404";
